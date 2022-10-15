@@ -4,23 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drijon H.</title>
-    <link rel="icon" href="https://cdn.discordapp.com/avatars/778557320123777026/b5a47116b4f465d7de313b4ca9a50895.png?size=4096">
+    <title>Drijon - Front-End Developer</title>
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/778557320123777026/ef5053106258547bef3ad691e681fd5d.png?size=2048">
     <link rel="stylesheet" href="style.css">
-    <meta property="og:title" content="Drijon H" />
-    <meta property="og:description" content="Hey there, my Name is Drijon and I'm a Front End Developer. More about me in this Website." />
+    <!--Meta Data-->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="Drijon, drijon, Drijon H., Drijon7577">
+    <meta name="author" content="Drijon H.">
+    <meta property="og:title" content="Drijon H." />
+    <meta property="og:description" content="Hey there! I'm Drijon, a Front-End Developer. Check out my Website for more Information." />
     <meta property="og:url" content="https://drijon.co/" />
-    <meta property="og:image" content="https://cdn.discordapp.com/avatars/778557320123777026/b5a47116b4f465d7de313b4ca9a50895.png?size=4096" />
-    <meta name="theme-color" content="#02D8FF">
+    <meta property="og:image" content="https://cdn.discordapp.com/avatars/778557320123777026/ef5053106258547bef3ad691e681fd5d.png?size=2048" />
+    <meta name="theme-color" content="#02ff7c">
+    <!--End Meta Data-->
 </head>
 <body>
-    <header>
-      <div class="content">
-        <h1>Drijon H.</h1>
-        <h2>COMING SOON</h2>
-        <div class="countdown">20. Aug. 2022 | 12:00:00</div>
-      </div>
-    </header>
-    <script src="main.js"></script>
+    <!--Nav-->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="https://drijon.co" target="_blank">Drijon H.</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="https://dc.drijon.xyz">Discord</a></li>
+                    <li><a href="https://twitter.com/drijonh_">Twitter</a></li>
+                    <li><a href="https://github.com/drijonh">GitHub</a></li>
+                </ul>
+            </div>
+            </span>
+        </div>
+    </nav>
+<!--Description-->
+<section class="home">
+</section>
+    </div>
+    <h2 class="myH2"><strong>About</strong></h2>
+    <p class="myP">
+        Hey, my name is <strong>Drijon</strong>, my Pronouns are <strong>He/Him - They/Them</strong>. I was born at <strong>27th of April</strong> a few years ago and I currently live in <strong>South Tyrol</strong>.. I am a hobby <strong>Front-End Developer</strong> and a <strong>Tech</strong> helper around my Village. What I like doing in my free time is <strong>Coding</strong> around with Websites (such as this one), play <strong>Basketball</strong>, and a couple of more things. I currently mainly work at my project, an <strong>App</strong> (still not released) - You can learn more about it at <strong><a href="app.drijon.co" target="_blank">here</a></strong>.
+    </p>
+    <p class="myH2"><strong>Technologies</strong></p>
+    <p class="myP">
+        •&nbsp; JavaScript, Node.JS<br />
+        •&nbsp; Python<br />
+        •&nbsp; Next.JS<br />
+        •&nbsp; HTML, CSS<br />
+        •&nbsp; Windows<br />
+    </p>
+    <p class="myH2"><strong>Contact</strong></p>
+        <p class="myP">
+            Feel free to contact me at <strong>web@drijon.co</strong>
+    </p>
+    <p class="copyright">
+        ©️ Made with 🖤 by Drijon
+    </p>
+</div>
+
 </body>
+
+
+<!--Script-->
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+
 </html>
